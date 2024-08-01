@@ -103,7 +103,7 @@
             progressBarFill.style.width = '0%'; // Reset progress bar
 
             const prompts = document.getElementById('prompts').value;
-            const responsePromise = fetch('http://localhost:5000/generate', {
+            const responsePromise = fetch('https://specially-willing-werewolf.ngrok-free.app/generate', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ prompts }),
